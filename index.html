@@ -373,14 +373,26 @@ section { padding: 100px 72px; }
   transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .collection-card:hover .collection-card-bg { transform: scale(1.04); }
-.collection-card-bg.street { background: linear-gradient(160deg, #1B3A0F 0%, #2D5016 60%, #1B3A0F 100%); }
-.collection-card-bg.sport { background: linear-gradient(160deg, #0F1F0A 0%, #1B3A0F 60%, #2D5016 100%); }
-.collection-card-bg.luxury { background: linear-gradient(160deg, #1A1200 0%, #2C1E00 50%, #3D2A00 100%); }
+.collection-card-bg.street {
+  background-image: url('https://images.unsplash.com/photo-1547347298-4074fc3086f0?w=800&q=80&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+.collection-card-bg.sport {
+  background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center top;
+}
+.collection-card-bg.luxury {
+  background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
 
 .collection-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+  background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.35) 55%, rgba(0,0,0,0.1) 100%);
 }
 .collection-card-content {
   position: absolute;
